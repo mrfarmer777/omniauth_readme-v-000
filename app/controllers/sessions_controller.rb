@@ -17,6 +17,7 @@ class SessionsController < ApplicationController
 
   private
 
+  #This appears to be called on line 6 above, using the omniauth request environment?
   def auth
     request.env['omniauth.auth']
   end    
